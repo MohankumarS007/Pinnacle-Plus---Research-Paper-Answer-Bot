@@ -1,0 +1,92 @@
+[
+  {
+    "query_id": "Q01",
+    "question": "What is the key difference between scaled dot-product attention and multi-head attention in Transformer architecture?",
+    "category": "Transformer Architecture",
+    "expected_papers": [
+      "1706.03762"
+    ],
+    "target_concept": "Multi-head attention projects queries, keys, and values h times with different learned linear projections."
+  },
+  {
+    "query_id": "Q02",
+    "question": "How does BERT use Masked Language Modeling (MLM) and Next Sentence Prediction (NSP) for pre-training bidirectional representations?",
+    "category": "Language Representation",
+    "expected_papers": [
+      "1810.04805"
+    ],
+    "target_concept": "Masked Language Model predicts randomly masked tokens bidirectionally; NSP predicts if sentence B follows A."
+  },
+  {
+    "query_id": "Q03",
+    "question": "How does GPT-3 perform few-shot learning through in-context prompting without fine-tuning model weights?",
+    "category": "Large Language Models",
+    "expected_papers": [
+      "2005.14165"
+    ],
+    "target_concept": "In-context learning presents task demonstrations inside the prompt window without gradient updates."
+  },
+  {
+    "query_id": "Q04",
+    "question": "Why does Sentence-BERT use a Siamese network architecture with mean pooling instead of standard BERT cross-encoding for semantic search?",
+    "category": "Embeddings & Semantic Search",
+    "expected_papers": [
+      "1908.10084"
+    ],
+    "target_concept": "Siamese BERT derives semantically meaningful sentence embeddings that can be compared with cosine similarity."
+  },
+  {
+    "query_id": "Q05",
+    "question": "How does Dense Passage Retrieval (DPR) train dual encoders using in-batch negative passages to outperform BM25?",
+    "category": "Information Retrieval",
+    "expected_papers": [
+      "2004.04906"
+    ],
+    "target_concept": "Dense passage retriever maps questions and passages to low-dimensional vector space using dot-product similarity."
+  },
+  {
+    "query_id": "Q06",
+    "question": "How does Retrieval-Augmented Generation (RAG) combine a pre-trained parametric generator with a non-parametric dense retrieval index?",
+    "category": "RAG Foundation",
+    "expected_papers": [
+      "2005.11401"
+    ],
+    "target_concept": "RAG models combine parametric memory (BART generator) with non-parametric memory (dense vector index of Wikipedia)."
+  },
+  {
+    "query_id": "Q07",
+    "question": "How does Chain-of-Thought (CoT) prompting enable large language models to solve multi-step mathematical and arithmetic reasoning problems?",
+    "category": "Reasoning & CoT",
+    "expected_papers": [
+      "2201.11903"
+    ],
+    "target_concept": "Chain-of-Thought provides explicit intermediate reasoning steps before arriving at the final answer."
+  },
+  {
+    "query_id": "Q08",
+    "question": "How does Toolformer autonomously decide when and how to call external APIs such as a calculator, Wikipedia search, or calendar?",
+    "category": "Tool Use & Function Calling",
+    "expected_papers": [
+      "2302.04761"
+    ],
+    "target_concept": "Toolformer teaches itself tool use by generating candidate API calls, executing them, and filtering by loss reduction."
+  },
+  {
+    "query_id": "Q09",
+    "question": "What is the ReAct framework and how does it interleave thought rationales with action execution for LLM agents?",
+    "category": "AI Agents",
+    "expected_papers": [
+      "2210.03629"
+    ],
+    "target_concept": "ReAct synergetic loop alternates between generating reasoning thoughts and executing domain actions."
+  },
+  {
+    "query_id": "Q10",
+    "question": "What is the lost in the middle phenomenon and how does token position in long contexts affect LLM retrieval accuracy?",
+    "category": "Long-Context Behavior",
+    "expected_papers": [
+      "2307.03172"
+    ],
+    "target_concept": "Performance is highest when relevant information is at the beginning or end of context, degrading significantly in the middle."
+  }
+]

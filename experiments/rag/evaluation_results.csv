@@ -1,0 +1,11 @@
+Query ID,Category,Retrieval Relevant,Answer Grounded,Citation Correct,Page Correct,Latency (ms)
+RAG_Q01,Core Concept,YES,YES,YES,YES,781
+RAG_Q02,Core Concept,YES,YES,YES,YES,810
+RAG_Q03,Specific Paper,YES,YES,YES,YES,661
+RAG_Q04,Specific Paper,YES,YES,YES,YES,626
+RAG_Q05,Specific Paper,YES,YES,YES,YES,650
+RAG_Q06,Multi-Paper,YES,YES,YES,YES,922
+RAG_Q07,Paraphrased Con,YES,YES,YES,YES,681
+RAG_Q08,Tool Use,YES,YES,YES,YES,735
+RAG_Q09,AI Agents,YES,YES,YES,YES,533
+RAG_Q10,Out-of-Domain (,YES,YES,YES,YES,728

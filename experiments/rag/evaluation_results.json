@@ -1,0 +1,322 @@
+[
+  {
+    "query_id": "RAG_Q01",
+    "type": "Core Concept",
+    "question": "What is the key difference between scaled dot-product attention and multi-head attention in the Transformer?",
+    "answer": "Based on the research findings in [Attention Is All You Need], Scaled Dot-Product Attention\n Multi-Head Attention\nFigure 2: (left) Scaled Dot-Product Attention. 3.2.1 Scaled Dot-Product Attention\nWe call our particular attention \"Scaled Dot-Product Attention\" (Figure 2). (right) Multi-Head Attention consists of several\nattention layers running in parallel. [Source 1: Attention Is All You Need, Page 4].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 780.71,
+    "top_sources": [
+      {
+        "title": "Attention Is All You Need",
+        "page": 4,
+        "paper_id": "1706.03762",
+        "score": 5.5527
+      },
+      {
+        "title": "Attention Is All You Need",
+        "page": 4,
+        "paper_id": "1706.03762",
+        "score": 4.3733
+      },
+      {
+        "title": "Attention Is All You Need",
+        "page": 4,
+        "paper_id": "1706.03762",
+        "score": 3.7423
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 1706.03762"
+  },
+  {
+    "query_id": "RAG_Q02",
+    "type": "Core Concept",
+    "question": "How does BERT pre-train bidirectional representations using Masked Language Modeling and Next Sentence Prediction?",
+    "answer": "Based on the research findings in [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding], In addi-\ntion to the masked language model, we also use\na \u201cnext sentence prediction\u201d task that jointly pre-\ntrains text-pair representations. (2018), which uses unidirec-\ntional language models for pre-training, BERT\nuses masked language models to enable pre-\ntrained deep bidirectional representations. Unlike left-to-\nright language model pre-training, the MLM ob-\njective enables the representation to fuse the left\nand the right context, which allows us to pre-\ntrain a deep bidirectional Transformer. [Source 1: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding, Page 2].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 810.44,
+    "top_sources": [
+      {
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "page": 2,
+        "paper_id": "1810.04805",
+        "score": 7.5711
+      },
+      {
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "page": 1,
+        "paper_id": "1810.04805",
+        "score": 5.3589
+      },
+      {
+        "title": "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing",
+        "page": 10,
+        "paper_id": "2107.13586",
+        "score": 4.8806
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 1810.04805"
+  },
+  {
+    "query_id": "RAG_Q03",
+    "type": "Specific Paper",
+    "question": "How does GPT-3 perform few-shot learning through in-context prompting without updating model weights?",
+    "answer": "Based on the research findings in [Language Models are Few-Shot Learners], allow as many demonstrations as will \ufb01t into the model\u2019s context window (typically 10 to 100), (b) \u201cone-shot learning\u201d,\nwhere we allow only one demonstration, and (c) \u201czero-shot\u201d learning, where no demonstrations are allowed and only\nan instruction in natural language is given to the model. Figure 1.2 illustrates the conditions we study, and shows few-shot learning of a simple task requiring the model to\nremove extraneous symbols from a word. Few-shot learning also improves dramatically\nwith model size. [Source 1: Language Models are Few-Shot Learners, Page 5].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 661.27,
+    "top_sources": [
+      {
+        "title": "Language Models are Few-Shot Learners",
+        "page": 5,
+        "paper_id": "2005.14165",
+        "score": 5.0723
+      },
+      {
+        "title": "Language Models are Few-Shot Learners",
+        "page": 5,
+        "paper_id": "2005.14165",
+        "score": 4.6978
+      },
+      {
+        "title": "Language Models are Few-Shot Learners",
+        "page": 40,
+        "paper_id": "2005.14165",
+        "score": 4.4916
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 2005.14165"
+  },
+  {
+    "query_id": "RAG_Q04",
+    "type": "Specific Paper",
+    "question": "Why does Sentence-BERT use a Siamese network architecture with pooling instead of standard cross-encoders for clustering?",
+    "answer": "Based on the research findings in [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks], Sentence A Sentence B \nBERT BERT \nu v \npooling pooling \n(u, v, |u-v|) \nSoftmax classifier \nFigure 1: SBERT architecture with classi\ufb01cation ob-\njective function, e.g., for \ufb01ne-tuning on SNLI dataset. However, poly-\nencoders have the drawback that the score function\nis not symmetric and the computational overhead\nis too large for use-cases like clustering, which\nwould requireO(n2) score computations. In this publication, we use the pre-trained BERT\nand RoBERTa network and only \ufb01ne-tune it to\nyield useful sentence embeddings. [Source 1: Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks, Page 3].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 625.6,
+    "top_sources": [
+      {
+        "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+        "page": 3,
+        "paper_id": "1908.10084",
+        "score": 5.0638
+      },
+      {
+        "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+        "page": 8,
+        "paper_id": "1908.10084",
+        "score": 3.1354
+      },
+      {
+        "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+        "page": 3,
+        "paper_id": "1908.10084",
+        "score": 2.4691
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 1908.10084"
+  },
+  {
+    "query_id": "RAG_Q05",
+    "type": "Specific Paper",
+    "question": "How does Dense Passage Retrieval (DPR) use dual encoders to outperform traditional BM25 in open-domain QA?",
+    "answer": "Based on the research findings in [Dense Passage Retrieval for Open-Domain Question Answering], Dense retrieval methods have thus never\nbe shown to outperform TF-IDF/BM25 for open-\ndomain QA before ORQA (Lee et al., 2019), which\nproposes a sophisticated inverse cloze task (ICT)\nobjective, predicting the blocks that contain the\nmasked sentence, for additional pretraining. Although ORQA successfully demonstrates that\ndense retrieval can outperform BM25, setting new\nstate-of-the-art results on multiple open-domain\narXiv:2004.04906v3  [cs.CL]  30 Sep 2020 However, it is generally believed that learn-\ning a good dense vector representation needs a\nlarge number of labeled pairs of question and con-\ntexts. [Source 1: Dense Passage Retrieval for Open-Domain Question Answering, Page 1].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 649.61,
+    "top_sources": [
+      {
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "page": 1,
+        "paper_id": "2004.04906",
+        "score": 5.2094
+      },
+      {
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "page": 2,
+        "paper_id": "2004.04906",
+        "score": 4.8236
+      },
+      {
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "page": 8,
+        "paper_id": "2004.04906",
+        "score": 4.4797
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 2004.04906"
+  },
+  {
+    "query_id": "RAG_Q06",
+    "type": "Multi-Paper",
+    "question": "How does Retrieval-Augmented Generation (RAG) combine parametric and non-parametric memory?",
+    "answer": "Based on the research findings in [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks], We\nexplore a general-purpose \ufb01ne-tuning recipe for retrieval-augmented generation\n(RAG) \u2014 models which combine pre-trained parametric and non-parametric mem-\nory for language generation. We introduce RAG models where the parametric\nmemory is a pre-trained seq2seq model and the non-parametric memory is a dense\nvector index of Wikipedia, accessed with a pre-trained neural retriever. trained models with a differentiable access mechanism to explicit non-parametric\nmemory have so far been only investigated for extractive downstream tasks. [Source 1: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks, Page 1].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 921.65,
+    "top_sources": [
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "page": 1,
+        "paper_id": "2005.11401",
+        "score": 7.7876
+      },
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "page": 2,
+        "paper_id": "2005.11401",
+        "score": 6.3502
+      },
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "page": 9,
+        "paper_id": "2005.11401",
+        "score": 5.9329
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 2005.11401"
+  },
+  {
+    "query_id": "RAG_Q07",
+    "type": "Paraphrased Concept",
+    "question": "Can breaking down complex word math problems into step-by-step thinking traces improve LLM accuracy?",
+    "answer": "Based on the research findings in [A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions], Inspired by the human thinking process, chain-of-thought [326] has been\nintroduced to encourage LLMs to decompose complex problems into explicitly intermediate steps,\nthereby enhancing the reliability of the reasoning process [58]. A branch of research has been inspired to improve the consistency of\nintermediate rationales generated by LLMs, particularly in multi-step reasoning [61] and logical\nreasoning [18]. [Source 1: A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions, Page 25].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 681.4,
+    "top_sources": [
+      {
+        "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+        "page": 25,
+        "paper_id": "2311.05232",
+        "score": 1.5727
+      },
+      {
+        "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+        "page": 11,
+        "paper_id": "2312.10997",
+        "score": -1.5517
+      },
+      {
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "page": 5,
+        "paper_id": "2201.11903",
+        "score": -2.0713
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 2311.05232"
+  },
+  {
+    "query_id": "RAG_Q08",
+    "type": "Tool Use",
+    "question": "How does Toolformer decide when and where to insert external API calls into generated text?",
+    "answer": "Based on the research findings in [Toolformer: Language Models Can Teach Themselves to Use Tools], Moreover, as API calls are inserted in exactly those\npositions and with exactly those inputs that help\nM predict future tokens, \ufb01netuning onC\u2217 enables\nthe language model to decide when and how to use\nwhich tool, based purely on its own feedback. x1:i\u22121, e(ci,r i),x i:n; we proceed analogously for\ntexts with multiple API calls. Doing this for allx\u2208\nC results in the new datasetC\u2217 augmented with API\ncalls. [Source 1: Toolformer: Language Models Can Teach Themselves to Use Tools, Page 4].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 735.17,
+    "top_sources": [
+      {
+        "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+        "page": 4,
+        "paper_id": "2302.04761",
+        "score": 2.7543
+      },
+      {
+        "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+        "page": 1,
+        "paper_id": "2302.04761",
+        "score": 1.7273
+      },
+      {
+        "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+        "page": 11,
+        "paper_id": "2302.04761",
+        "score": 1.6843
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 2302.04761"
+  },
+  {
+    "query_id": "RAG_Q09",
+    "type": "AI Agents",
+    "question": "What is the ReAct loop and how does it combine reasoning traces with action execution?",
+    "answer": "Based on the research findings in [ReAct: Synergizing Reasoning and Acting in Language Models], ReAct\nprompts LLMs to generate both verbal reasoning traces and actions pertaining to a task in an\ninterleaved manner, which allows the model to perform dynamic reasoning to create, maintain, and\nadjust high-level plans for acting (reason to act), while also interact with the external environments\n(e.g. In this work, we present ReAct, a general paradigm to combine reasoning and acting with language\nmodels for solving diverse language reasoning and decision making tasks (Figure 1). Wikipedia) to incorporate additional information into reasoning (act to reason). [Source 1: ReAct: Synergizing Reasoning and Acting in Language Models, Page 2].",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 533.37,
+    "top_sources": [
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "page": 2,
+        "paper_id": "2210.03629",
+        "score": 4.73
+      },
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "page": 1,
+        "paper_id": "2210.03629",
+        "score": 2.2636
+      },
+      {
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "page": 3,
+        "paper_id": "2210.03629",
+        "score": 1.4613
+      }
+    ],
+    "notes": "Retrieved top source from expected paper 2210.03629"
+  },
+  {
+    "query_id": "RAG_Q10",
+    "type": "Out-of-Domain (Anti-Hallucination Test)",
+    "question": "How does CRISPR-Cas9 perform targeted gene cleavage in mammalian genomic editing?",
+    "answer": "The provided research papers do not contain sufficient information to answer this question.",
+    "retrieval_relevant": true,
+    "answer_grounded": true,
+    "citation_correct": true,
+    "page_correct": true,
+    "latency_ms": 728.18,
+    "top_sources": [
+      {
+        "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+        "page": 20,
+        "paper_id": "2311.05232",
+        "score": -10.1255
+      },
+      {
+        "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+        "page": 20,
+        "paper_id": "2311.05232",
+        "score": -10.517
+      },
+      {
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "page": 9,
+        "paper_id": "2005.11401",
+        "score": -10.9224
+      }
+    ],
+    "notes": "Correctly refused to answer out-of-domain question (Anti-hallucination verified)"
+  }
+]

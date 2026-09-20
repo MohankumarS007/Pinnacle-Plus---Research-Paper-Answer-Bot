@@ -1,0 +1,571 @@
+{
+  "retriever_method": "hybrid_dense_bm25_rrf+reranker",
+  "num_queries": 10,
+  "hit_at_1": 0.9,
+  "hit_at_3": 1.0,
+  "hit_at_5": 1.0,
+  "mrr": 0.9333,
+  "avg_latency_ms": 732.27,
+  "query_results": [
+    {
+      "query_id": "Q01",
+      "question": "What is the key difference between scaled dot-product attention and multi-head attention in Transformer architecture?",
+      "category": "Transformer Architecture",
+      "expected_papers": [
+        "1706.03762"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 717.98,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "1706.03762",
+          "title": "Attention Is All You Need",
+          "page": 4,
+          "score": 5.362,
+          "snippet": "Scaled Dot-Product Attention  Multi-Head Attention Figure 2: (left) Scaled Dot-Product Attention. (right) Multi-Head Attention consists of several attention layers running in parallel. of the values, "
+        },
+        {
+          "rank": 2,
+          "paper_id": "1706.03762",
+          "title": "Attention Is All You Need",
+          "page": 4,
+          "score": 4.2566,
+          "snippet": "the matrix of outputs as: Attention(Q,K,V ) = softmax(QK T \u221adk )V (1) The two most commonly used attention functions are additive attention [2], and dot-product (multi- plicative) attention. Dot-produ"
+        },
+        {
+          "rank": 3,
+          "paper_id": "1706.03762",
+          "title": "Attention Is All You Need",
+          "page": 4,
+          "score": 3.6934,
+          "snippet": "extremely small gradients 4. To counteract this effect, we scale the dot products by 1\u221adk . 3.2.2 Multi-Head Attention Instead of performing a single attention function withdmodel-dimensional keys, va"
+        },
+        {
+          "rank": 4,
+          "paper_id": "1706.03762",
+          "title": "Attention Is All You Need",
+          "page": 5,
+          "score": 2.2542,
+          "snippet": "output values. These are concatenated and once again projected, resulting in the final values, as depicted in Figure 2. Multi-head attention allows the model to jointly attend to information from diff"
+        },
+        {
+          "rank": 5,
+          "paper_id": "1706.03762",
+          "title": "Attention Is All You Need",
+          "page": 5,
+          "score": 1.8081,
+          "snippet": "information flow in the decoder to preserve the auto-regressive property. We implement this inside of scaled dot-product attention by masking out (setting to\u2212\u221e) all values in the input of the softmax "
+        }
+      ]
+    },
+    {
+      "query_id": "Q02",
+      "question": "How does BERT use Masked Language Modeling (MLM) and Next Sentence Prediction (NSP) for pre-training bidirectional representations?",
+      "category": "Language Representation",
+      "expected_papers": [
+        "1810.04805"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 827.96,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "1810.04805",
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "page": 2,
+          "score": 7.5921,
+          "snippet": "word based only on its context. Unlike left-to- right language model pre-training, the MLM ob- jective enables the representation to fuse the left and the right context, which allows us to pre- train "
+        },
+        {
+          "rank": 2,
+          "paper_id": "1810.04805",
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "page": 8,
+          "score": 5.4778,
+          "snippet": "Dev Set Tasks MNLI-m QNLI MRPC SST-2 SQuAD (Acc) (Acc) (Acc) (Acc) (F1) BERTBASE 84.4 88.4 86.7 92.7 88.5 No NSP 83.9 84.9 86.5 92.6 87.9 LTR & No NSP 82.1 84.3 77.5 92.1 77.8 + BiLSTM 82.1 84.1 75.7 "
+        },
+        {
+          "rank": 3,
+          "paper_id": "2107.13586",
+          "title": "Pre-train, Prompt, and Predict: A Systematic Survey of Prompting Methods in Natural Language Processing",
+          "page": 10,
+          "score": 5.425,
+          "snippet": "generating the optimal representations for down-stream tasks such as classi\ufb01cation, many other options become possible, and often preferable. One popular bidirectional objective function used widely i"
+        },
+        {
+          "rank": 4,
+          "paper_id": "1810.04805",
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "page": 1,
+          "score": 5.4152,
+          "snippet": "tuning based approaches to token-level tasks such as question answering, where it is crucial to incor- porate context from both directions. In this paper, we improve the \ufb01ne-tuning based approaches by"
+        },
+        {
+          "rank": 5,
+          "paper_id": "1810.04805",
+          "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+          "page": 13,
+          "score": 3.4941,
+          "snippet": "training loss is the sum of the mean masked LM likelihood and the mean next sentence prediction likelihood. Training of BERT BASE was performed on 4 Cloud TPUs in Pod con\ufb01guration (16 TPU chips total)"
+        }
+      ]
+    },
+    {
+      "query_id": "Q03",
+      "question": "How does GPT-3 perform few-shot learning through in-context prompting without fine-tuning model weights?",
+      "category": "Large Language Models",
+      "expected_papers": [
+        "2005.14165"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 649.36,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "page": 5,
+          "score": 5.2944,
+          "snippet": "allow as many demonstrations as will \ufb01t into the model\u2019s context window (typically 10 to 100), (b) \u201cone-shot learning\u201d, where we allow only one demonstration, and (c) \u201czero-shot\u201d learning, where no de"
+        },
+        {
+          "rank": 2,
+          "paper_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "page": 5,
+          "score": 4.6085,
+          "snippet": "number of examples in-context hold for most tasks we study. We emphasize that these \u201clearning\u201d curves involve no gradient updates or \ufb01ne-tuning, just increasing numbers of demonstrations given as cond"
+        },
+        {
+          "rank": 3,
+          "paper_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "page": 18,
+          "score": 4.521,
+          "snippet": "achieved by the Uni\ufb01edQA which exceeds GPT-3\u2019s few-shot results by 27% on the challenge set and 22% on the easy set. On OpenBookQA [MCKS18], GPT-3 improves signi\ufb01cantly from zero to few shot settings "
+        },
+        {
+          "rank": 4,
+          "paper_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "page": 5,
+          "score": 4.4561,
+          "snippet": "Figure 1.3: Aggregate performance for all 42 accuracy-denominated benchmarks While zero-shot performance improves steadily with model size, few-shot performance increases more rapidly, demonstrating t"
+        },
+        {
+          "rank": 5,
+          "paper_id": "2005.14165",
+          "title": "Language Models are Few-Shot Learners",
+          "page": 1,
+          "score": 4.0619,
+          "snippet": "a few examples or from simple instructions \u2013 something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot per"
+        }
+      ]
+    },
+    {
+      "query_id": "Q04",
+      "question": "Why does Sentence-BERT use a Siamese network architecture with mean pooling instead of standard BERT cross-encoding for semantic search?",
+      "category": "Embeddings & Semantic Search",
+      "expected_papers": [
+        "1908.10084"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 606.9,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "1908.10084",
+          "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+          "page": 1,
+          "score": 4.4364,
+          "snippet": "(SBERT), a modi\ufb01cation of the pretrained BERT network that use siamese and triplet net- work structures to derive semantically mean- ingful sentence embeddings that can be com- pared using cosine-simi"
+        },
+        {
+          "rank": 2,
+          "paper_id": "1908.10084",
+          "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+          "page": 3,
+          "score": 3.6029,
+          "snippet": "be tuned in less than 20 minutes, while yielding better results than comparable sentence embed- ding methods. 3 Model SBERT adds a pooling operation to the output of BERT / RoBERTa to derive a \ufb01xed si"
+        },
+        {
+          "rank": 3,
+          "paper_id": "1908.10084",
+          "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+          "page": 1,
+          "score": 3.5452,
+          "snippet": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks Nils Reimers and Iryna Gurevych Ubiquitous Knowledge Processing Lab (UKP-TUDA) Department of Computer Science, Technische Universit\u00a8at Da"
+        },
+        {
+          "rank": 4,
+          "paper_id": "1908.10084",
+          "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+          "page": 3,
+          "score": 3.36,
+          "snippet": "Sentence A Sentence B  BERT BERT  u v  pooling pooling  (u, v, |u-v|)  Softmax classifier  Figure 1: SBERT architecture with classi\ufb01cation ob- jective function, e.g., for \ufb01ne-tuning on SNLI dataset. T"
+        },
+        {
+          "rank": 5,
+          "paper_id": "1908.10084",
+          "title": "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks",
+          "page": 1,
+          "score": 2.2345,
+          "snippet": "for BERT. These tasks include large-scale seman- 1Code available: https://github.com/UKPLab/ sentence-transformers 2With semantically meaningful we mean that semantically similar sentences are close i"
+        }
+      ]
+    },
+    {
+      "query_id": "Q05",
+      "question": "How does Dense Passage Retrieval (DPR) train dual encoders using in-batch negative passages to outperform BM25?",
+      "category": "Information Retrieval",
+      "expected_papers": [
+        "2004.04906"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 847.82,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "2004.04906",
+          "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 5,
+          "score": 5.8638,
+          "snippet": "The DPR model used in our main experiments is trained using the in-batch negative setting (Sec- tion 3.2) with a batch size of128 and one additional BM25 negative passage per question. We trained the "
+        },
+        {
+          "rank": 2,
+          "paper_id": "2004.04906",
+          "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 2,
+          "score": 5.2184,
+          "snippet": "surprisingly simple: the embedding is optimized for maximizing inner products of the question and relevant passage vectors, with an objective compar- ing all pairs of questions and passages in a batch"
+        },
+        {
+          "rank": 3,
+          "paper_id": "2004.04906",
+          "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 6,
+          "score": 5.0281,
+          "snippet": "Sample ef\ufb01ciency We explore how many train- ing examples are needed to achieve good passage retrieval performance. Figure 1 illustrates the top-k retrieval accuracy with respect to different num- bers"
+        },
+        {
+          "rank": 4,
+          "paper_id": "2004.04906",
+          "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 8,
+          "score": 4.7136,
+          "snippet": "and Multi denote that our Dense Passage Retriever (DPR) is trained using individual or combined training datasets (all except SQuAD). For WQ and TREC in the Multi setting, we \ufb01ne-tune the reader train"
+        },
+        {
+          "rank": 5,
+          "paper_id": "2004.04906",
+          "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+          "page": 5,
+          "score": 4.2026,
+          "snippet": "ument length normalization) and k1 = 0 .9 (term frequency scaling) are tuned using development sets. 20 40 60 80 100 k: # of retrieved passages 40 50 60 70 80 90Top-k accuracy (%) BM25 # Train: 1k # T"
+        }
+      ]
+    },
+    {
+      "query_id": "Q06",
+      "question": "How does Retrieval-Augmented Generation (RAG) combine a pre-trained parametric generator with a non-parametric dense retrieval index?",
+      "category": "RAG Foundation",
+      "expected_papers": [
+        "2005.11401"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 981.29,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 1,
+          "score": 6.7651,
+          "snippet": "trained models with a differentiable access mechanism to explicit non-parametric memory have so far been only investigated for extractive downstream tasks. We explore a general-purpose \ufb01ne-tuning reci"
+        },
+        {
+          "rank": 2,
+          "paper_id": "2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 9,
+          "score": 4.981,
+          "snippet": "found that people prefer RAG\u2019s generation over purely parametric BART, \ufb01nding RAG more factual and speci\ufb01c. We conducted an thorough investigation of the learned retrieval component, validating its ef"
+        },
+        {
+          "rank": 3,
+          "paper_id": "2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 2,
+          "score": 4.6221,
+          "snippet": "Maximum Inner Product Search (MIPS) to \ufb01nd the top-K documentszi. For \ufb01nal prediction y, we treatz as a latent variable and marginalize over seq2seq predictions given different documents. but have onl"
+        },
+        {
+          "rank": 4,
+          "paper_id": "2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 1,
+          "score": 2.7248,
+          "snippet": "outperforming parametric seq2seq models and task-speci\ufb01c retrieve-and-extract architectures. For language generation tasks, we \ufb01nd that RAG models generate more speci\ufb01c, diverse and factual language t"
+        },
+        {
+          "rank": 5,
+          "paper_id": "2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "page": 3,
+          "score": 2.6517,
+          "snippet": "a pre-trained bi-encoder from DPR to initialize our retriever and to build the document index. This retriever was trained to retrieve documents which contain answers to TriviaQA [24] questions and Nat"
+        }
+      ]
+    },
+    {
+      "query_id": "Q07",
+      "question": "How does Chain-of-Thought (CoT) prompting enable large language models to solve multi-step mathematical and arithmetic reasoning problems?",
+      "category": "Reasoning & CoT",
+      "expected_papers": [
+        "2201.11903"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 525.11,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "2201.11903",
+          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "page": 8,
+          "score": 6.2824,
+          "snippet": "6 Discussion We have explored chain-of-thought prompting as a simple mechanism for eliciting multi-step rea- soning behavior in large language models. We \ufb01rst saw that chain-of-thought prompting impro"
+        },
+        {
+          "rank": 2,
+          "paper_id": "2201.11903",
+          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "page": 1,
+          "score": 5.9659,
+          "snippet": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models Jason Wei Xuezhi Wang Dale Schuurmans Maarten Bosma Brian Ichter Fei Xia Ed H. Chi Quoc V . Le Denny Zhou Google Research, Brain T"
+        },
+        {
+          "rank": 3,
+          "paper_id": "2201.11903",
+          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "page": 3,
+          "score": 5.5349,
+          "snippet": "language models can generate chains of thought if demonstrations of chain-of-thought reasoning are provided in the exemplars for few-shot prompting. Figure 1 shows an example of a model producing a ch"
+        },
+        {
+          "rank": 4,
+          "paper_id": "2201.11903",
+          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "page": 2,
+          "score": 5.3373,
+          "snippet": "Speci\ufb01cally, we explore the ability of language models to perform few-shot prompting for reasoning tasks, given a prompt that consists of triples:\u27e8input, chain of thought, output\u27e9. A chain of thought "
+        },
+        {
+          "rank": 5,
+          "paper_id": "2201.11903",
+          "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+          "page": 2,
+          "score": 5.2277,
+          "snippet": "important because it does not require a large training dataset and because a single model checkpoint can perform many tasks without loss of generality. This work underscores how large language models "
+        }
+      ]
+    },
+    {
+      "query_id": "Q08",
+      "question": "How does Toolformer autonomously decide when and how to call external APIs such as a calculator, Wikipedia search, or calendar?",
+      "category": "Tool Use & Function Calling",
+      "expected_papers": [
+        "2302.04761"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 732.5,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "2302.04761",
+          "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+          "page": 1,
+          "score": 5.1561,
+          "snippet": "California State Legislature that guarantees the public's  right to attend and participate in meetings of local  legislative bodies.] that requires legislative bodies, like  city councils, to hold the"
+        },
+        {
+          "rank": 2,
+          "paper_id": "2302.04761",
+          "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+          "page": 11,
+          "score": 2.8549,
+          "snippet": "similar to how this is done in related bootstrapping approaches (Schick and Sch\u00fctze, 2021a; Izacard and Grave, 2021; Parisi et al., 2022). Finally, when deciding whether or not to make an API call, To"
+        },
+        {
+          "rank": 3,
+          "paper_id": "2302.04761",
+          "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+          "page": 11,
+          "score": 1.3556,
+          "snippet": "engines, that could potentially return hundreds of different results, enabling a LM to browse through these results or to re\ufb01ne its search query in a simi- lar spirit to Nakano et al. (2021) can be cr"
+        },
+        {
+          "rank": 4,
+          "paper_id": "2302.04761",
+          "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+          "page": 1,
+          "score": 0.7257,
+          "snippet": "Toolformer: Language Models Can Teach Themselves to Use Tools Timo Schick Jane Dwivedi-Yu Roberto Dess\u00ec \u2020 Roberta Raileanu Maria Lomeli Luke Zettlemoyer Nicola Cancedda Thomas Scialom Meta AI Research"
+        },
+        {
+          "rank": 5,
+          "paper_id": "2312.10997",
+          "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+          "page": 11,
+          "score": 0.7008,
+          "snippet": "in model agents like AutoGPT, Toolformer, and Graph- Toolformer [107]\u2013[109]. Graph-Toolformer, for instance, di- vides its retrieval process into distinct steps where LLMs proactively use retrievers, "
+        }
+      ]
+    },
+    {
+      "query_id": "Q09",
+      "question": "What is the ReAct framework and how does it interleave thought rationales with action execution for LLM agents?",
+      "category": "AI Agents",
+      "expected_papers": [
+        "2210.03629"
+      ],
+      "first_match_rank": 1,
+      "is_hit_1": true,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 655.05,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "2210.03629",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "page": 2,
+          "score": 3.3722,
+          "snippet": "In this work, we present ReAct, a general paradigm to combine reasoning and acting with language models for solving diverse language reasoning and decision making tasks (Figure 1). ReAct prompts LLMs "
+        },
+        {
+          "rank": 2,
+          "paper_id": "2210.03629",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "page": 8,
+          "score": 1.1996,
+          "snippet": "additional sparse reasoning, ReAct achieves signi\ufb01cantly better performance, with an absolute 10% improvement over the previous best success rate. By checking examples, we \ufb01nd that ReAct is more likel"
+        },
+        {
+          "rank": 3,
+          "paper_id": "2210.03629",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "page": 3,
+          "score": 1.072,
+          "snippet": "The idea of ReAct is simple: we augment the agent\u2019s action space to \u02c6A =A\u222aL , whereL is the space of language. An action \u02c6at\u2208L in the language space, which we will refer to as a thought or a reasoning"
+        },
+        {
+          "rank": 4,
+          "paper_id": "2210.03629",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "page": 9,
+          "score": 0.3926,
+          "snippet": "consider the reasoning procedure either, and also relies on expensive datasets and human feedback collections for policy learning. In contrast, ReAct learns a policy in a much cheaper way, since the d"
+        },
+        {
+          "rank": 5,
+          "paper_id": "2210.03629",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "page": 9,
+          "score": -0.6809,
+          "snippet": "implemented as injected feedback from the environment. To our knowledge, Inner Monologue is the \ufb01rst work that demonstrates such a closed-loop system, which ReAct builds on. However, we argue that Inn"
+        }
+      ]
+    },
+    {
+      "query_id": "Q10",
+      "question": "What is the lost in the middle phenomenon and how does token position in long contexts affect LLM retrieval accuracy?",
+      "category": "Long-Context Behavior",
+      "expected_papers": [
+        "2307.03172"
+      ],
+      "first_match_rank": 3,
+      "is_hit_1": false,
+      "is_hit_3": true,
+      "is_hit_5": true,
+      "reciprocal_rank": 0.3333,
+      "latency_ms": 778.69,
+      "top_results": [
+        {
+          "rank": 1,
+          "paper_id": "2311.05232",
+          "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+          "page": 31,
+          "score": 4.7563,
+          "snippet": "especially for information located in the middle of the long context window, a notable issue known as the lost-in-the-middle phenomenon [189]. Beyond factoid QA, recent studies have further demonstrat"
+        },
+        {
+          "rank": 2,
+          "paper_id": "2312.10997",
+          "title": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+          "page": 10,
+          "score": 2.1086,
+          "snippet": "10 introduces an innovative method for integrating knowledge into white-box models via directive fine-tuning [75]. In this approach, the retriever module is directly substituted to gen- erate relevant"
+        },
+        {
+          "rank": 3,
+          "paper_id": "2307.03172",
+          "title": "Lost in the Middle: How Language Models Use Long Contexts",
+          "page": 1,
+          "score": 1.0974,
+          "snippet": "Lost in the Middle: How Language Models Use Long Contexts Nelson F . Liu1\u2217 Kevin Lin2 John Hewitt1 Ashwin Paranjape3 Michele Bevilacqua3 Fabio Petroni3 Percy Liang1 1Stanford University 2University of"
+        },
+        {
+          "rank": 4,
+          "paper_id": "2307.03172",
+          "title": "Lost in the Middle: How Language Models Use Long Contexts",
+          "page": 11,
+          "score": 0.7603,
+          "snippet": "ory. Observing a serial-position-like effect in lan- guage models is perhaps surprising, since the self- attention mechanisms underlying Transformer lan- guage models is technically equally capable of"
+        },
+        {
+          "rank": 5,
+          "paper_id": "2311.05232",
+          "title": "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions",
+          "page": 31,
+          "score": 0.7074,
+          "snippet": "a characteristic commonly observed in news reports [257]. Such an issue brings forth challenges in retrieval-augmented LLMs, as retrieval-augmented LLMs are typically designed with extensive lengths t"
+        }
+      ]
+    }
+  ]
+}

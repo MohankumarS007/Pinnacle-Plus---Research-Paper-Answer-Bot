@@ -1,0 +1,91 @@
+[
+  {
+    "query_id": "RAG_Q01",
+    "type": "Core Concept",
+    "question": "What is the key difference between scaled dot-product attention and multi-head attention in the Transformer?",
+    "expected_papers": [
+      "1706.03762"
+    ],
+    "expected_behavior": "Explain that multi-head attention linearly projects Q, K, V into multiple representation subspaces."
+  },
+  {
+    "query_id": "RAG_Q02",
+    "type": "Core Concept",
+    "question": "How does BERT pre-train bidirectional representations using Masked Language Modeling and Next Sentence Prediction?",
+    "expected_papers": [
+      "1810.04805"
+    ],
+    "expected_behavior": "Explain MLM masking 15% tokens and NSP binary classification."
+  },
+  {
+    "query_id": "RAG_Q03",
+    "type": "Specific Paper",
+    "question": "How does GPT-3 perform few-shot learning through in-context prompting without updating model weights?",
+    "expected_papers": [
+      "2005.14165"
+    ],
+    "expected_behavior": "Explain that demonstrations are placed directly in context window without parameter gradient updates."
+  },
+  {
+    "query_id": "RAG_Q04",
+    "type": "Specific Paper",
+    "question": "Why does Sentence-BERT use a Siamese network architecture with pooling instead of standard cross-encoders for clustering?",
+    "expected_papers": [
+      "1908.10084"
+    ],
+    "expected_behavior": "Explain that standard BERT cross-encoder is too slow for 10,000 sentences (65 hours vs 5 seconds)."
+  },
+  {
+    "query_id": "RAG_Q05",
+    "type": "Specific Paper",
+    "question": "How does Dense Passage Retrieval (DPR) use dual encoders to outperform traditional BM25 in open-domain QA?",
+    "expected_papers": [
+      "2004.04906"
+    ],
+    "expected_behavior": "Explain dense dual-encoder embeddings for questions and passages compared via dot-product."
+  },
+  {
+    "query_id": "RAG_Q06",
+    "type": "Multi-Paper",
+    "question": "How does Retrieval-Augmented Generation (RAG) combine parametric and non-parametric memory?",
+    "expected_papers": [
+      "2005.11401",
+      "2312.10997"
+    ],
+    "expected_behavior": "Explain parametric memory in seq2seq generator combined with non-parametric dense vector index."
+  },
+  {
+    "query_id": "RAG_Q07",
+    "type": "Paraphrased Concept",
+    "question": "Can breaking down complex word math problems into step-by-step thinking traces improve LLM accuracy?",
+    "expected_papers": [
+      "2201.11903"
+    ],
+    "expected_behavior": "Explain Chain-of-Thought prompting eliciting multi-step intermediate reasoning steps."
+  },
+  {
+    "query_id": "RAG_Q08",
+    "type": "Tool Use",
+    "question": "How does Toolformer decide when and where to insert external API calls into generated text?",
+    "expected_papers": [
+      "2302.04761"
+    ],
+    "expected_behavior": "Explain self-supervised API call generation filtered by loss reduction on subsequent tokens."
+  },
+  {
+    "query_id": "RAG_Q09",
+    "type": "AI Agents",
+    "question": "What is the ReAct loop and how does it combine reasoning traces with action execution?",
+    "expected_papers": [
+      "2210.03629"
+    ],
+    "expected_behavior": "Explain the Thought-Action-Observation loop allowing models to reason and interact with environments."
+  },
+  {
+    "query_id": "RAG_Q10",
+    "type": "Out-of-Domain (Anti-Hallucination Test)",
+    "question": "How does CRISPR-Cas9 perform targeted gene cleavage in mammalian genomic editing?",
+    "expected_papers": [],
+    "expected_behavior": "The system MUST detect insufficient context and state that the research papers do not contain enough information."
+  }
+]
